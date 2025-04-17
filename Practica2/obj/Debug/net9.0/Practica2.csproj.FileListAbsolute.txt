@@ -338,3 +338,9 @@ C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\ru\Microsoft.
 C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\DataLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\DomainLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\EntityLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\DomainLayer.pdb
+C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\EntityLayer.pdb
+C:\Users\joaqu\Documents\.Net\Practica2\Practica2\bin\Debug\net9.0\DataLayer.pdb

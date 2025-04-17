@@ -1,0 +1,17 @@
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\bin\Debug\net9.0\DataLayer.deps.json
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\bin\Debug\net9.0\DataLayer.runtimeconfig.json
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\bin\Debug\net9.0\DataLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\bin\Debug\net9.0\DataLayer.pdb
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\bin\Debug\net9.0\EntityLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\bin\Debug\net9.0\EntityLayer.pdb
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.csproj.AssemblyReference.cache
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.AssemblyInfo.cs
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.csproj.Up2Date
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\refint\DataLayer.dll
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.pdb
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\DataLayer.genruntimeconfig.cache
+C:\Users\joaqu\Documents\.Net\Practica2\DataLayer\obj\Debug\net9.0\ref\DataLayer.dll

@@ -1,14 +1,21 @@
 using Microsoft.EntityFrameworkCore;
-using Practica2.Models;
+using EntityLayer;
+using DomainLayer;
+using DataLayer;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<HotelDbexamenContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("cnx")));
 
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+builder.Services.AddScoped<ReservaService>();
+builder.Services.AddScoped<ReservaRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -2822,6 +2822,45 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "DataLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EntityLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLayer.dll": {}
+        }
+      },
+      "DomainLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DataLayer": "1.0.0",
+          "EntityLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DomainLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLayer.dll": {}
+        }
+      },
+      "EntityLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/EntityLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLayer.dll": {}
+        }
       }
     }
   },
@@ -7662,10 +7701,27 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataLayer/DataLayer.csproj",
+      "msbuildProject": "../DataLayer/DataLayer.csproj"
+    },
+    "DomainLayer/1.0.0": {
+      "type": "project",
+      "path": "../DomainLayer/DomainLayer.csproj",
+      "msbuildProject": "../DomainLayer/DomainLayer.csproj"
+    },
+    "EntityLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EntityLayer.csproj",
+      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "DomainLayer >= 1.0.0",
+      "EntityLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 9.0.0"
@@ -7702,7 +7758,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\DomainLayer\\DomainLayer.csproj": {
+              "projectPath": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\DomainLayer\\DomainLayer.csproj"
+            },
+            "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\EntityLayer\\EntityLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

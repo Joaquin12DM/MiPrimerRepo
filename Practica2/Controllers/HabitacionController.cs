@@ -1,67 +1,61 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DomainLayer;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Practica2.Models;
+using EntityLayer;
 
 namespace Practica2.Controllers
 {
     public class HabitacionController : Controller
     {
 
-        private readonly HotelDbexamenContext _context;
+        private readonly ReservaService reservaService;
 
-        public HabitacionController(HotelDbexamenContext context)
+        public HabitacionController(ReservaService reservaService)
         {
-            _context = context;
+           this.reservaService = reservaService;
         }
 
         private void CargarLista()
         {
-            ViewBag.habitacion = _context.TbHabitaciones.Select(a => 
-            new { a.IdHabitacion, a.NroHabitacion }).ToList();
+            ViewBag.habitacion = reservaService.ListaHabitaciones();
 
 
-            ViewBag.cliente = _context.TbClientes.Select(c =>
-            new { c.IdCliente, c.Nombres, c.Apellidos }).ToList();
+            ViewBag.cliente = reservaService.ListaClientes();
 
-            ViewBag.estado = _context.TbReservas.Select(e => e.Estado)
-                .Distinct()
-                .ToList();
+            ViewBag.estado = reservaService.ListaReserva();
         }
 
         public IActionResult Index()
         {
-            var reserva = _context.TbReservas
-                .Include(c => c.IdClienteNavigation)
-                .Include(a => a.IdHabitacionNavigation!.IdTipoNavigation)
-                .ToList();
-            return View(reserva);
+            var list = reservaService.getAll();
+
+            return View(list);
             
         }
 
         public IActionResult Create()
         {
             CargarLista();
-            return View(new TbReserva());
+            return View();
         }
 
         [HttpPost]
-        public IActionResult Create(TbReserva t)
+        public IActionResult Create(TbReserva reserva)
         {
             if(ModelState.IsValid)
             {
-                _context.TbReservas.Add(t);      
-                _context.SaveChanges();
+                reservaService.create(reserva);
                 return RedirectToAction("Index");
 
             }
             CargarLista();
-            return View(t);
+            return View(reserva);
         }
 
         public IActionResult Edit(int id)
         {
             CargarLista();
-            var reserva = _context.TbReservas.Find(id);
+            var reserva = reservaService.findId(id);
             return View(reserva);
         }
 
@@ -70,8 +64,7 @@ namespace Practica2.Controllers
         {
             if(ModelState.IsValid)
             {
-                _context.TbReservas.Update(t);
-                _context.SaveChanges();
+                reservaService.update(t);
                 return RedirectToAction(nameof(Index));
             }
             CargarLista();
@@ -81,13 +74,8 @@ namespace Practica2.Controllers
         [HttpPost]
         public IActionResult Delete(int id)
         {
-            var r = _context.TbReservas.Find(id);
-            if (r == null)
-            {
-                return NotFound(); 
-            }
-            _context.TbReservas.Remove(r);
-            _context.SaveChanges();
+           
+            reservaService.delete(id); 
             return RedirectToAction("Index");
         }
 
