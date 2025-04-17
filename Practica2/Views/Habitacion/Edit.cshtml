@@ -1,0 +1,77 @@
+﻿@model Practica2.Models.TbReserva
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    TempData["Title"] = "EDITAR RESERVA";
+}
+
+<h1>@TempData["Title"]</h1>
+<form asp-action="Edit" style="width:500px;" method="post">
+    <input hidden  asp-for="IdReserva" />
+    <div class="form-group">
+        <label for="IdHabitacion" class="form-label">Habitacion</label>
+        <select asp-for="IdHabitacion" class="form-control" id="IdHabitacion">
+            <option value="">--Seleccione una Habitacion--</option>
+            @foreach (var habitacion in (IEnumerable<dynamic>)ViewBag.habitacion)
+            {
+                <option value="@habitacion.IdHabitacion">@habitacion.NroHabitacion</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="IdCliente">Cliente</label>
+        <select asp-for="IdCliente" class="form-control" id="IdCliente">
+            <option value="">--Seleccione un cliente--</option>
+            @foreach (var cliente in (IEnumerable<dynamic>)ViewBag.cliente)
+            {
+                <option value="@cliente.IdCliente">@cliente.Nombres @cliente.Apellidos</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaReserva" class="form-label"></label>
+        <input asp-for="FechaReserva" type="date" class="form-control" />
+        <span asp-validation-for="FechaReserva" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FechaEntrada" class="form-label"></label>
+        <input asp-for="FechaEntrada" type="date" class="form-control" />
+        <span asp-validation-for="FechaEntrada" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FechaSalida" class="form-label"></label>
+        <input asp-for="FechaSalida" type="date" class="form-control" />
+        <span asp-validation-for="FechaSalida" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="NroPersonas" class="form-label">Numero de Personas</label>
+        <input class="form-control" asp-for="NroPersonas" id="NroPersonas" />
+    </div>
+    <div class="form-group">
+        <label for="PrecioTotal" class="form-label">Precio Total</label>
+        <input class="form-control" asp-for="PrecioTotal" id="PrecioTotal" />
+    </div>
+    <div class="form-group">
+        <label for="Estado" class="form-label">Estado</label>
+        <select asp-for="Estado" id="Estado" class="form-control">
+            <option value="">--Estado--</option>
+            @foreach (var estado in (IEnumerable<string>)ViewBag.estado)
+            {
+                <option value="@estado">@estado</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Comentarios" class="form-label">Comentarios</label>
+        <textarea class="form-control" asp-for="Comentarios" id="Comentarios"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block mb-3">Enviar</button>
+
+
+</form>
+

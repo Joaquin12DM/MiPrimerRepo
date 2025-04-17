@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TbReserva>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    TempData["Title"] = "LISTA DE RESERVAS";
+}
+
+<h1>@TempData["Title"]</h1>
+<a asp-action="Create">Crear Nueva Reserva</a>
+ 
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id Reserva</th>
+            <th> Precio Total</th>
+            <th>Nombres</th>
+            <th>Tipo Habitacion</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            
+            @foreach(var reserva in Model)
+            {
+                <tr>
+
+                    <td>@reserva.IdReserva</td>
+                    <td>@reserva.PrecioTotal</td>
+                    <td>@reserva.IdClienteNavigation?.Nombres @reserva.IdClienteNavigation?.Apellidos</td>
+                    <td>@reserva.IdHabitacionNavigation?.IdTipoNavigation.NombreTipo</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@reserva.IdReserva" class="btn btn-primary">Edit</a>
+
+                  
+                        <form asp-action="Delete" asp-route-id="@reserva.IdReserva" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            
+        
+    </tbody>
+
+</table>
