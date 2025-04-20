@@ -9,6 +9,11 @@
 
 <h1>@TempData["Title"]</h1>
 <a asp-action="Create">Crear Nueva Reserva</a>
+
+<form asp-action="Buscar" method="post">
+    <input type="text" name="Nombre" placeholder="Buscar por nombre" />
+    <button type="submit">Buscar</button>
+</form>
  
 <table class="table">
     <thead>
