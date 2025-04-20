@@ -32,6 +32,20 @@ namespace Practica2.Controllers
             return View(list);
             
         }
+        [HttpPost]
+        public IActionResult Buscar(string Nombre)
+        {
+            if (Nombre == null)
+            {
+                var reservas = reservaService.getAll();
+                return View("Index", reservas);
+
+            }
+            var reserva = reservaService.ObtenerReservaPorCliente(Nombre);
+            return View("Index", reserva);
+
+        }
+
 
         public IActionResult Create()
         {

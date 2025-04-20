@@ -51,5 +51,12 @@ namespace DomainLayer
             return reservaRepository.ListaReserva();
         }
 
+        public IEnumerable<TbReserva> ObtenerReservaPorCliente(string nombre)
+        {
+            return reservaRepository.GetAll()
+                .Where(r => (r.IdClienteNavigation!.Nombres + " " + r.IdClienteNavigation.Apellidos)
+                .Contains(nombre, StringComparison.OrdinalIgnoreCase));
+        }
+
     }
 }

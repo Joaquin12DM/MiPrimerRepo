@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{01256C07-278D-4C26-B1DA-F85C2521593D}|DomainLayer\\DomainLayer.csproj|c:\\users\\joaqu\\documents\\.net\\practica2\\domainlayer\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01256C07-278D-4C26-B1DA-F85C2521593D}|DomainLayer\\DomainLayer.csproj|solutionrelative:domainlayer\\reservaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECEF1323-8D43-492F-8128-92BB19731134}|Practica2\\Practica2.csproj|c:\\users\\joaqu\\documents\\.net\\practica2\\practica2\\views\\habitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECEF1323-8D43-492F-8128-92BB19731134}|Practica2\\Practica2.csproj|solutionrelative:practica2\\views\\habitacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECEF1323-8D43-492F-8128-92BB19731134}|Practica2\\Practica2.csproj|c:\\users\\joaqu\\documents\\.net\\practica2\\practica2\\controllers\\habitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECEF1323-8D43-492F-8128-92BB19731134}|Practica2\\Practica2.csproj|solutionrelative:practica2\\controllers\\habitacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "HabitacionController.cs",
               "DocumentMoniker": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\Practica2\\Controllers\\HabitacionController.cs",
               "RelativeDocumentMoniker": "Practica2\\Controllers\\HabitacionController.cs",
               "ToolTip": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\Practica2\\Controllers\\HabitacionController.cs",
               "RelativeToolTip": "Practica2\\Controllers\\HabitacionController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA1wCUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T23:14:58.772Z",
+              "WhenOpened": "2025-04-20T15:50:42.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\Practica2\\Views\\Habitacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "Practica2\\Views\\Habitacion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\Practica2\\Views\\Habitacion\\Index.cshtml",
+              "RelativeToolTip": "Practica2\\Views\\Habitacion\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T15:49:55.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservaService.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\DomainLayer\\ReservaService.cs",
+              "RelativeDocumentMoniker": "DomainLayer\\ReservaService.cs",
+              "ToolTip": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\DomainLayer\\ReservaService.cs",
+              "RelativeToolTip": "DomainLayer\\ReservaService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wC4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T23:58:07.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ReservaRepository.cs",
               "DocumentMoniker": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\DataLayer\\ReservaRepository.cs",
               "RelativeDocumentMoniker": "DataLayer\\ReservaRepository.cs",
               "ToolTip": "C:\\Users\\joaqu\\Documents\\.Net\\Practica2\\DataLayer\\ReservaRepository.cs",
               "RelativeToolTip": "DataLayer\\ReservaRepository.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAwwEwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T23:12:44.099Z",
+              "WhenOpened": "2025-04-19T00:22:39.057Z",
               "EditorCaption": ""
             }
           ]
